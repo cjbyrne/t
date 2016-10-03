@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="Fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.js-1.4.2/parallax.min.js"></script>
+</head>
+<style>
+    .row{
+        margin: 0;
+    }
+    .col-md-12{
+        padding: 0;
+    }
+    .col-md-10{
+        padding: 0;
+    }
+    .col-md-1{
+        padding: 0;
+    }
+    .col-md-2{
+        padding: 0;
+    }
+    .col-md-4{
+        padding: 0;
+        overflow: hidden;
+        background-color: #ebeced
+    }
+    .col-md-5{
+        padding: 0;
+    }
+    .col-md-7{
+        padding: 0;
+    }
+    .col-md-6{
+        padding: 0;
+    }
+    @font-face {
+        font-family: SugarCubes;
+        src: url(Fonts/sugarcubes/SugarcubesRegular.ttf)
+    }
+    @font-face {
+        font-family: FontAwesome;
+        src: url(Fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+    }
+    @font-face {
+        font-family: OpenSans;
+        src: url(Fonts/open-sans/OpenSans-Regular.ttf);
+    }
+    @font-face {
+        font-family: OpenSansBold;
+        src: url(Fonts/open-sans/OpenSans-Bold.ttf);
+    }
+    h1{
+        font-family: SugarCubes;
+        font-size: 39pt;
+        color: white;
+        margin-bottom: 20px;
+    }
+    h2.post-title{
+        font-family: SugarCubes;
+        font-size: 24pt;
+        color: black;
+        margin-top: 30px;
+    }
+    h3.post-date{
+        font-family: OpenSans;
+        font-size: 10pt;
+        color: black;
+        opacity: 0.75;
+    }
+    p.post-content{
+        font-family: OpenSans;
+        font-size: 14pt;
+        color: black;
+        margin-top: 30px;
+    }
+    .parallax-container {
+        min-height: 400px;
+        background: transparent;
+    }
+    body{
+        background-color: #ebeced;;
+    }
+    div.blogButton{
+        height: 50px;
+        width: 180px;
+        background-color: #222f3f;
+        font-size: 12pt;
+        color: white;
+        font-family: OpenSans;
+        text-align: center;
+        padding-top: 13px;
+        margin-top: 26px;
+    }
+    div.contact{
+        text-align: center;
+        height: 200px;
+        width:200px;
+        border: 8px solid white;
+    }
+    .fixed-nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+    div.blogButton:hover{
+        transition: background-color .4s ease-out;
+        background-color: #e74d45;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    div.imgOuter{
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        overflow: hidden;
+    }
+    div.img{
+    }
+    div.overlay{
+        position:absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition:all .5s;
+        overflow:hidden;
+        height: 0;
+        text-align: center;
+        margin: 5px;
+    }
+    div.img:hover .overlay, .overlay:hover{
+        background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+        height: 10%;
+    }
+    p.over{
+        padding-top:30px;
+        font-size: 12pt;
+        font-family: OpenSans;
+        color: white;
+    }
+
+</style>
+<body>
+<nav class="fixed-nav-bar">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="col-md-12">
+                <a href="">
+                    <div class="col-md-1" style="background-color: #e74d45; height: 50px; transform:skew(-20deg, 0deg);">
+                        <div class="col-md-6" style="background-color: #e74d45; height: 50px; transform: skew(20deg, 0deg)">
+                            <i class="fa fa-bars" aria-hidden="true" style="font-size: 2.1em; margin-left:18px; margin-top:9px; color: black;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="col-md-10"></div>
+            <a href="home.html">
+                <div class="col-md-1" style="height: 100px; background-color: #e74d45"></div>
+            </a>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class=".container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="25" data-image-src="./images/backing/galleryHead.png" data-natural-width="1920" data-natural-height="800" style="height: 600px;">
+                <h1 style="text-align: center; padding-top: 250px">CONNOR BYRNE - GALLERY</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class=".container">
+        <div class="row">
+            <div class="col-md-12" style="height: 5px; background-color: #ebeced">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGFinalFull1.jpg" target="_blank">
+                        <img src="images/gallery/EUGFinalThumb1.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2106 Lead Finals
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+            <div class="img">
+                <a href="images/gallery/EUGFinalFull2.jpg" target="_blank">
+                    <img src="images/gallery/EUGFinalThumb2.png">
+                    <div class="overlay">
+                        <p class="over">
+                            EUG 2016 Lead Finals
+                        </p>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+            <div class="img">
+                <a href="images/gallery/EUGBoulderingQFull.jpg" target="_blank">
+                    <img src="images/gallery/EUGBoulderingQ.png">
+                    <div class="overlay">
+                        <p class="over">
+                            EUG 2016 Bouldering Qualifiers
+                        </p>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGBoulderingFFull.jpg" target="_blank">
+                        <img src="images/gallery/EUGBoulderingF.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2016 Bouldering Finals
+                            </p>
+                        </div>
+                    </a>
+                </div>
+           </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/ArcoQ2Full.jpg" target="_blank">
+                        <img src="images/gallery/ArcoQ2.png">
+                        <div class="overlay">
+                            <p class="over">
+                                Arco 2015 Lead Qualifiers
+                            </p>
+                       </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/ArcoQ1Full.jpg" target="_blank">
+                        <img src="images/gallery/ArcoQ1.png">
+                        <div class="overlay">
+                            <p class="over">
+                                Arco 2015 Lead Qualifiers
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGFinalFull1.jpg" target="_blank">
+                        <img src="images/gallery/EUGFinalThumb1.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2106 Lead Finals
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGFinalFull2.jpg" target="_blank">
+                        <img src="images/gallery/EUGFinalThumb2.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2016 Lead Finals
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGBoulderingQFull.jpg" target="_blank">
+                        <img src="images/gallery/EUGBoulderingQ.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2016 Bouldering Qualifiers
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/EUGBoulderingFFull.jpg" target="_blank">
+                        <img src="images/gallery/EUGBoulderingF.png">
+                        <div class="overlay">
+                            <p class="over">
+                                EUG 2016 Bouldering Finals
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/ArcoQ2Full.jpg" target="_blank">
+                        <img src="images/gallery/ArcoQ2.png">
+                        <div class="overlay">
+                            <p class="over">
+                                Arco 2015 Lead Qualifiers
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="imgOuter">
+                <div class="img">
+                    <a href="images/gallery/ArcoQ1Full.jpg" target="_blank">
+                        <img src="images/gallery/ArcoQ1.png">
+                        <div class="overlay">
+                            <p class="over">
+                                Arco 2015 Lead Qualifiers
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class=".container">
+        <div class="row">
+            <div class="col-md-12" style="height: 5px; background-color: #ebeced">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class=".container">
+    <div class="row" style="height: 200px; background-color: #222f3f">
+        <div class="col-md-12" style="padding-top: 50px;">
+            <div class="col-md-1" style="height: 100px; background-color: #222f3f"></div>
+            <div class="col-md-2" style="height: 100px; background-color: #222f3f">
+                <img src="images/backing/evolv-logo.png" style="height: 100px; margin: auto; display: block">
+            </div>
+            <div class="col-md-2" style="height: 100px; background-color: #222f3f">
+                <img src="images/backing/Metolius_Logo_BW.png" style="height: 100px; margin: auto; display: block">
+            </div>
+            <div class="col-md-2" style="height: 100px; background-color: #222f3f">
+                <img src="images/backing/prana-id-c6455b3cd8762a22.jpg.png" style="width: 100px; margin: auto; margin-top: 12px; display: block">
+            </div>
+            <div class="col-md-2" style="height: 100px; background-color: #222f3f">
+                <img src="images/backing/jm.png" style="width: 150px; margin: auto; margin-top: 30px; display: block">
+            </div>
+            <div class="col-md-2" style="height: 100px; background-color: #222f3f">
+                <img src="images/backing/SportSheff.png" style="width: 125px; margin: auto; margin-top: 22px; display: block">
+            </div>
+            <div class="col-md-1" style="height: 100px; background-color: #222f3f"></div>
+        </div>
+        <div class="col-md-12" style="height: 50px"></div>
+    </div>
+</div>
+<div class=".container">
+    <div class="row" style="height: 60px; background-color: #222222;"></div>
+</div>
+</body>
+</html>

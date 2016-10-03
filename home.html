@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connor Byrne</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="Fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.js-1.4.2/parallax.min.js"></script>
+</head>
+<style>
+    .row{
+        margin: 0;
+    }
+    .col-md-12{
+        padding: 0;
+    }
+    .col-md-10{
+        padding: 0;
+    }
+    .col-md-1{
+        padding: 0;
+    }
+    .col-md-2{
+        padding: 0;
+    }
+    .col-md-4{
+        padding: 0;
+    }
+    .col-md-5{
+        padding: 0;
+    }
+    .col-md-7{
+        padding: 0;
+    }
+    .col-md-6{
+        padding: 0;
+    }
+    @font-face {
+        font-family: SugarCubes;
+        src: url(Fonts/sugarcubes/SugarcubesRegular.ttf)
+    }
+    @font-face {
+        font-family: FontAwesome;
+        src: url(Fonts/font-awesome-4.6.3/fonts/fontawesome-webfont.ttf);
+    }
+    @font-face {
+        font-family: OpenSans;
+        src: url(Fonts/open-sans/OpenSans-Regular.ttf);
+    }
+    @font-face {
+        font-family: OpenSansBold;
+        src: url(Fonts/open-sans/OpenSans-Bold.ttf);
+    }
+    h1{
+        font-family: SugarCubes;
+        font-size: 39pt;
+        color: white;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-family: OpenSansBold;
+        font-size: 12pt;
+        color: white;
+        margin-top: 30px;
+    }
+    h3{
+        font-family: OpenSans;
+        font-size: 12pt;
+        color: white;
+        opacity: 0.75;
+    }
+    p{
+        font-family: OpenSans;
+        font-size: 16pt;
+        color: white;
+        margin-top: 30px;
+    }
+    .parallax-container {
+        min-height: 400px;
+        background: transparent;
+    }
+    body{
+        background-color: #ebeced;;
+    }
+    div.button{
+        height: 80px;
+        width: 180px;
+        border: 5px solid white;
+    }
+    div.contact{
+        margin: auto;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        border: 5px solid white;
+    }
+    .fixed-nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+    div.button:hover .glyphicon, .glyphicon:hover{
+        transition: color .5s ease-out;
+        color: black !important;
+        opacity: 0.66;
+        }
+    div.button:hover{
+        background-color: rgba(255,255,255,0.5);
+        border: 5px solid rgba(255,255,255,0);
+        transition: background-color 0.4s ease-out, border 0.4s ease-out;
+    }
+    div.menu{
+        height: 100px;
+        width:100px;
+        background-color: #e74d45;
+        visibility: hidden;
+    }
+
+    a.menubtn:hover div.menu {
+        visibility: visible;
+    }
+    #section04 a span {
+        position: absolute;
+        top: 0;
+        left: 81.1%;
+        width: 24px;
+        height: 24px;
+        margin-left: -12px;
+        border-left: 1px solid #222f3f;
+        border-bottom: 1px solid #222f3f;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb04 2s infinite;
+        animation: sdb04 2s infinite;
+        box-sizing: border-box;
+    }
+    @-webkit-keyframes sdb04 {
+        0% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+            -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+        }
+    }
+    @keyframes sdb04 {
+        0% {
+            transform: rotate(-45deg) translate(0, 0);
+        }
+        20% {
+            transform: rotate(-45deg) translate(-10px, 10px);
+        }
+        40% {
+            transform: rotate(-45deg) translate(0, 0);
+        }
+    }
+</style>
+<script>
+    $(function() {
+        $('a[href*=#]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+        });
+    });
+</script>
+<body>
+
+<nav class="fixed-nav-bar">
+    <div class="row">
+        <div class="col-md-1">
+                <a class="menubtn">
+                    <div class="col-md-5" style="background-color: #e74d45; height: 50px; transform:skew(-20deg, 0deg);">
+                        <div class="col-md-6" style="background-color: #e74d45; height: 50px; transform: skew(20deg, 0deg)">
+                            <i class="fa fa-bars" aria-hidden="true" style="font-size: 2.1em; margin-left:18px; margin-top:9px; color: black;"></i>
+                            <div class="menu"></div>
+                        </div>
+                    </div>
+                </a>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-7">
+            <div class="col-md-10"></div>
+            <a href="home.html">
+                <div class="col-md-1" style="height: 100px; background-color: #e74d45"></div>
+            </a>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class=".container">
+    <div class="row" style="height: 1030px;">
+        <div class="col-md-2" style="height: 1030px";></div>
+        <div class="col-md-5" style="height: 1030px;">
+            <div class="col-md-12" style="height: 250px;"></div>
+            <div class="col-md-12">
+                <img src="images/backing/flag.png">
+                <h1 style="color: #1c242f">BRITISH LEAD</h1>
+                <h1 style="color: #1c242f">CLIMBER</h1>
+                <p style="color: #222f3f">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                </p>
+                <!--<div class="button" style="margin-top: 50px; border-color: #222f3f; background-color: #222f3f;">
+                    <p style="font-size: 14pt; margin-top: 22px; text-align: center;">LEARN MORE</p>
+                </div>-->
+            </div>
+            <div class="col-md-12" style="margin-top: 325px">
+                <div>
+                    <section id="section04">
+                        <a href="#about"><span></span></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5" style="height: 1030px;">
+            <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/backing/header1130.png" data-natural-width="792" data-natural-height="1130" style="height: 1030px;"></div>
+        </div>
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row" style="height: 370px; background-color: #222f3f">
+        <div class="col-md-12">
+            <div class="col-md-12" style="height: 100px"><p style="opacity: 0.4; text-align: center">SPONSORS</p>        </div>
+            <div class="col-md-1" style="height: 200px; background-color: #222f3f"></div>
+            <div class="col-md-2" style="height: 200px; background-color: #222f3f">
+                <img src="images/backing/evolv-logo.png" style="height: 200px; margin: auto; display: block">
+            </div>
+            <div class="col-md-2" style="height: 200px; background-color: #222f3f">
+                <img src="images/backing/Metolius_Logo_BW.png" style="height: 200px; margin: auto; display: block">
+            </div>
+            <div class="col-md-2" style="height: 200px; background-color: #222f3f">
+                <img src="images/backing/prana-id-c6455b3cd8762a22.jpg.png" style="width: 200px; margin: auto; margin-top: 24px; display: block">
+            </div>
+            <div class="col-md-2" style="height: 200px; background-color: #222f3f">
+                <img src="images/backing/jm.png" style="width: 250px; margin: auto; margin-top:66px; display: block">
+            </div>
+            <div class="col-md-2" style="height: 200px; background-color: #222f3f">
+                <!--<img src="images/backing/TUOS_Logo_CMYK.png" style="width: 350px; margin: auto; margin-top: 30px; display: block">-->
+                <img src="images/backing/SportSheff.png" style="width: 200px; margin: auto; margin-top: 55px; display: block">
+
+            </div>
+            <div class="col-md-1" style="height: 200px; background-color: #222f3f"></div>
+        </div>
+        <div class="col-md-12" style="height: 70px"></div>
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row" style="height: 1000px; background-color: #6a6b69">
+        <section id="about"></section>
+        <div class="col-md-4">
+            <img src="images/backing/EUG2.png" style="width: 850px; opacity: 0.2;">
+        </div>
+        <div class="col-md-7">
+            <div class="col-md-12">
+                <div class="col-md-1"></div>
+                <div class="col-md-10" style="height: 1000px;">
+                    <div class="col-md-12" style="height: 50px;"></div>
+                    <div class="col-md-12">
+                        <h1 style="text-align: center">
+                            ABOUT ME
+                        </h1>
+                    </div>
+                    <div class="col-md-12" style="height: 125px;"></div>
+                    <div class="col-md-12" style="text-align: center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                        </p>
+                    </div>
+                    <div class="col-md-12" style="height: 125px;"></div>
+                    <div class="col-md-12" style=" text-align: center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                        </p>
+                    </div>
+                    <div class="col-md-12" style="height: 100px;"></div>
+                    <div class="col-md-12" style="height: 100px; text-align: center;">
+                        <i class="fa fa-twitter fa-5x" aria-hidden="true" style="color: white"></i>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row" style="height: 80px; background-color: #6a6b69">
+        <div class="col-md-1" style="background-color: #6a6b69; height: 80px"></div>
+        <div class="col-md-8" style="background-color: #e74d45; opacity:0.9; height: 80px">
+            <div class="col-md-12">
+            <div class="row" style="height: 80px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <h2>FEATURED BLOG</h2>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3" style="background-color: #6a6b69; height: 80px"></div>
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row" style="height: 1120px;">
+        <div class="col-md-12">
+            <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="100" data-image-src="./images/backing/arco1400.png" data-natural-width="1920" data-natural-height="1400" style="height: 1120px;">
+                <div class="col-md-1"></div>
+                <div class="col-md-8" style="background-color: rgba(231,77,69,0.9); height: 1200px;">
+                    <div class="col-md-12">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-7">
+                            <div class="row" style="height: 40px">
+                                <h3>12th January 2017</h3>
+                            </div>
+                            <div class="row" style="height: 80px; margin-bottom: 20px">
+                                <h1>ARCO WORLD CUP</h1>
+                            </div>
+                            <div class="row" style="height: 880px">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                                </p>
+                                <img src="images/backing/arco2.png" style="margin-top: 30px; margin-bottom: 15px;">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                                </p>
+                            </div>
+                            <a href="post.html">
+                                <div class="row" style="height: 100px;">
+                                    <div class="button">
+                                        <span class="glyphicon glyphicon-menu-right" style="font-size: 26pt; margin-top: 18px; margin-left: 10px; color: white;"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="row" style="height: 100px;"></div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div> </div>
+        </div>    
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row" style="height: 750px">
+        <div class="col-md-6" style=" background: url(images/backing/malham.png) no-repeat; height: 750px">
+            <div class="col-md-12" style="height: 750px; background-color: rgba(0,0,0,0.66);">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row" style="height: 50px"></div>
+                    <div class="row" style="height: 125px; text-align: center">
+                        <h1 style="color: rgba(255,255,255,1);">BLOG</h1>
+                    </div>
+                    <div class="row" style="height: 325px; text-align: center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                        </p>
+                    </div>
+                    <div class="row" style="height: 100px;">
+                        <a href="blog.html">
+                            <div class="button" style="margin: auto">
+                                <span class="glyphicon glyphicon-menu-right" style="font-size: 26pt; margin-top: 18px; margin-left: 10px; color: white;"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row" style="height: 100px"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="col-md-6" style="background: url(images/backing/EUG2016lead.png) no-repeat; height: 750px">
+            <div class="col-md-12" style="height: 750px; background-color: rgba(0,0,0,0.66);">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row" style="height: 50px"></div>
+                    <div class="row" style="height: 125px; text-align: center">
+                        <h1>GALLERY</h1>
+                    </div>
+                    <div class="row" style="height: 325px; text-align: center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia posuere enim eget porta. Maecenas lobortis id tortor id laoreet.
+                        </p>
+                    </div>
+                    <div class="row" style="height: 100px;">
+                        <a href="gallery.html">
+                            <div class="button" style="margin: auto">
+                                <span class="glyphicon glyphicon-menu-right" style="font-size: 26pt; margin-top: 18px; margin-left: 10px; color: white;"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row" style="height: 100px"></div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=".container">
+    <div class="row" style="height: 450px;">
+        <div class="col-md-12" style="height: 450px;">
+            <div class="parallax-container" data-parallax="scroll" data-speed="0.3" data-position="top" data-bleed="100" data-image-src="./images/backing/contact800.png" data-natural-width="1920" data-natural-height="800" style="height: 450px;">
+                <div style="background: url(images/backing/overlay.png) no-repeat; height: 450px;">
+                    <div class="col-md-12" style="height: 50px"></div>
+                    <div class="col-md-12" style="text-align: center">
+                        <h1>CONTACT</h1>
+                    </div>
+                    <div class="col-md-12" style="height: 75px"></div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-2">
+                            <div class="contact">
+                                <i class="fa fa-envelope" aria-hidden="true" style="color: white; font-size: 5em; margin-top: 7px;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                            <div class="contact">
+                                <i class="fa fa-twitter" aria-hidden="true" style="color: white; font-size: 5em; margin-top: 10px;"></i>
+                            </div>
+                        </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2">
+                                <div class="contact">
+                                    <i class="fa fa-google-plus" aria-hidden="true" style="color: white; font-size: 4em; margin-top: 16px;"></i>
+                                </div>
+                            </div>
+                        <div class="col-md-1"></div>
+                        </div>
+                    <div class="col-md-2"></div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

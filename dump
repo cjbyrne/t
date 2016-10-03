@@ -1,0 +1,43 @@
+<div class=".container">
+          <div class="row" style="height: 1030px; background-color: #eaeaeb">
+              <div class="col-md-8">LM</div>
+              <div class="col-md-4">
+
+
+              </div>
+          </div>
+      </div>
+      <div class=".container">
+          <div class="row" style="height: 250px; background-color: #222f3f">
+              <div class="col-md-12">sponsors</div>
+          </div>
+      </div>
+      <div class=".container">
+          <div class="row" style="height: 593px; background-color: #6a6b69">
+              <div class="col-md-4">dyno img</div>
+              <div class="col-md-8">about me</div>
+          </div>
+      </div>
+      <div class=".container">
+          <div class="row" style="height: 982px; background-color: #686a6c">
+              <div class="col-md-1">indent</div>
+              <div class="col-md-7" style="background-color: #e74d45; opacity:0.9; top:-45px; height: 1027px;">content</div>
+              <div class="col-md-4">tail</div>
+          </div>
+      </div>
+      <div class=".container">
+          <div class="row" style="height: 461px">
+              <div class="col-md-6" style="top:-45px">blog</div>
+              <div class="col-md-6" style="top:-45px">gallery</div>
+          </div>
+      </div>
+      <div class=".container">
+          <div class="row" style="height: 401px">
+              <div class="col-md-12">contact</div>
+          </div>
+      </div>
+
+
+
+background: url(images/backing/header-bgwgfull.png) fixed no-repeat right;
+<i class="fa fa-bars" aria-hidden="true" style="font-size: 2.5em; margin-left:15px; margin-top:6px; color: black;"></i>
